@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mess</title>
+  <link rel='stylesheet' href="index.css">
+</head>
+
+<body onload="getdata()"> 
+  <div class=".main_container">
+    <div class="navbar">
+      <a class="hstl_adder" href="index.html">Student_Adder</a>
+      <a class="hstl_arv" href="arv.html">Aravali</a>
+      <a class="hstl_him" href="him.html">Himalaya</a>
+      <a class="hstl_kuk" href="kuk.html">Kurukshetra</a>
+      <a class="hstl_shiv" href="shiv.html">Shivalik</a>
+      <!-- <a class="hstl_vin" href="vin.html">Vindhya</a>
+      <a class="hstl_kp" href="kp.html">Kalpna</a> -->
+    </div>
+    <div class="student_add">
+      <img src='noprofil.jpg' class="in_stu_img">
+      <div class="upload">
+        <button type="button" class="btn-warning">
+          <i class="fa fa-upload"></i> Upload File
+          <input type="file" class="img_url" accept=".jpg , .jpeg , .png">
+        </button>
+      </div>
+      <input class="in_student_name" placeholder="Student Name"></input>
+      <input class="in_student_sid" placeholder="Student SID"></input>
+      <input class="in_student_room" placeholder="Student Room Number"></input>
+      <select class="in_room_size">
+        <option value=''>Size</option>
+        <option value=1>Single</option>
+        <option value=2>Double</option>
+        <option value=3>Triple</option>
+      </select>
+      <select class="hostel">
+        <option value="">Choose Hostel</option>
+        <option value="Aravali">Aravali Hostel</option>
+        <option value="Kurukshetra">Kurukshetra Hostel</option>
+        <option value="Himalaya">Himalaya Hostel</option>
+        <option value="Shivalik">Shivalik Hostel</option>
+        <option value="Vindhya">Vindhya Hostel</option>
+        <option value="Kalpna">Kalpna Chawla Hostel</option>
+      </select>
+      <select class="block">
+        <option value="">Block</option>
+      </select>
+      <button class="add_btn" onclick="add_student()">Add Student</button>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/9374db09f4.js" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<!-- <script src="mess_script.js"></script> -->
+<script src="mess_script_obfuscated.js"></script>
+
+</html>
