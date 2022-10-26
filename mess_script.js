@@ -142,20 +142,6 @@ let urlToFile = (url) => {
   return file;
 };
 
-// function popup(cur_ele) {
-//   var cont = cur_ele.parentElement;
-//   var stuid = cont.querySelector(".stu_id").textContent;
-//   firebase
-//     .database()
-//     .ref("users/" + stuid)
-//     .remove();
-//   firebase
-//     .storage()
-//     .ref("Images/" + stuid + ".jpg")
-//     .delete();
-//   cont.remove();
-// }
-
 function add_student() {
   let stu_Name = student_name.value;
   let stu_SID = SID.value;
